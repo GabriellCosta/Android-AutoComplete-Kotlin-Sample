@@ -1,13 +1,10 @@
 package dev.tigrao.autocomplete
 
 import android.content.Context
-import android.util.Log
-import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.Filter
-import android.widget.TextView
 
 private const val NON_RESOURCE = 0
 
@@ -42,7 +39,6 @@ class AutoCompleteAdapter(
         }
 
         val item = filteredDogs[position]
-
 
         viewHolder.bind(item, clickListener)
 
